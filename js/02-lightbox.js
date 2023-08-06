@@ -7,7 +7,7 @@ const markup = galleryItems.reduce(
   (acc, { original, preview, description }) =>
     (acc += 
         `<li class="gallery__item">
-  <a cclass="gallery__link" href="${original}">
+  <a class="gallery__link" href="${original}">
     <img
       class="gallery__image"
       src="${preview}"

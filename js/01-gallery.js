@@ -24,7 +24,7 @@ function onImgClick(evt) {
   const currentImgUrl = evt.target.dataset.source;
 
   const instance = basicLightbox.create(
-    `<img src="${currentImgUrl}" width="1280" height="auto"/>`,
+    `<img src="${currentImgUrl}" width="1280px" height="1280px"/>`,
     { onShow: (instance) => {window.addEventListener('keydown', onEscKeyPress);},
       onClose: (instance) => {window.removeEventListener('keydown', onEscKeyPress);},
     }); instance.show();
